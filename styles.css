@@ -73,6 +73,10 @@ h2 {
     display: block;
     position: relative;
 }
+img {
+    max-width: 100%;
+    height: auto;
+  }
   
 #proyectos img {
     width: 100%;
