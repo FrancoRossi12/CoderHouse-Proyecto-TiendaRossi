@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mi portafolio</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 	<header>
@@ -22,66 +23,49 @@
 		</nav>
 	</header>
 	<main>
-		<section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Aquí puedes ver una lista de mis proyectos:</p>
-            <ul>
-              <li>
-                <a href="proyectos.html">
-                  <img src="img/proyecto1.jpg" alt="Proyecto 1">
-                  <span>Proyecto 1</span>
-                </a>
-              </li>
-              <li>
-                <a href="proyectos.html">
-                  <img src="img/proyecto2.jpg" alt="Proyecto 2">
-                  <span>Proyecto 2</span>
-                </a>
-              </li>
-              <li>
-                <a href="proyectos.html">
-                  <img src="img/proyecto3.jpg" alt="Proyecto 3">
-                  <span>Proyecto 3</span>
-                </a>
-              </li>
-            </ul>
-          </section>
 		<section id="sobre-mi">
-			<h2>Sobre mi</h2>
-			<p>¡Hola! Soy Franco Roman Rossi, un estudiante de universidad que está aprendiendo a programar. Me encanta trabajar en proyectos desafiantes y aprender cosas nuevas todos los días.</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Sobre mí</h2>
+						<p>Hola, mi nombre es Franco Rossi y soy estudiante de la Universidad CAECE de Mar del Plata, donde estoy cursando la carrera de Licenciatura en Informática. También me he formado en el colegio CADS y en cursos adicionales, como el de Desarrollo Web en Coderhouse.</p>
+						<p>Soy un apasionado por la tecnología y la programación, y siempre estoy buscando aprender cosas nuevas para mejorar mis habilidades y conocimientos.</p>
+					</div>
+					<div class="col-md-6">
+						<img src="img/perfil.jpg" alt="Perfil Franco Rossi">
+					</div>
+				</div>
+			</div>
 		</section>
-		<section id="habilidades">
-			<h2>Habilidades</h2>
-			<p>Estas son algunas de las habilidades que he desarrollado:</p>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>Python</li>
-				<li>C++</li>
-			</ul>
+		<section id="proyectos">
+			<div class="container">
+				<h2>Proyectos</h2>
+				<div class="card-deck">
+					<div class="card">
+						<img src="img/proyecto1.jpg" class="card-img-top" alt="Juego en Python">
+						<div class="card-body">
+							<h5 class="card-title">Juego en Python</h5>
+							<p class="card-text">Desarrollo de un juego en Python utilizando la librería Pygame.</p>
+							<a href="#" class="btn btn-primary">Ver proyecto</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/proyecto2.jpg" class="card-img-top" alt="Página web">
+						<div class="card-body">
+							<h5 class="card-title">Página web</h5>
+							<p class="card-text">Desarrollo de una página web utilizando HTML, CSS y Bootstrap.</p>
+							<a href="#" class="btn btn-primary">Ver proyecto</a>
+						</div>
+					</div>
+					<div class="card">
+						<img src="img/proyecto3.jpg" class="card-img-top" alt="Programación en C++">
+						<div class="card-body">
+							<h5 class="card-title">Programación en C++</h5>
+							<p class="card-text">Desarrollo de un programa en C++ para calcular la distancia entre dos puntos en un plano cartesiano.</p>
+							<a href="#" class="btn btn-primary">Ver proyecto</a>
+						</div>
 		</section>
-		<!-- <section id="descargar-cv">
-			<h2>Descargar CV</h2>
-			<p>Aquí puedes descargar mi CV en formato PDF:</p>
-			<a href="#">Descargar CV</a>
-		</section>
-		<section id="contacto">
-			<h2>Contacto</h2>
-			<p>Si quieres ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:</p>
-			<form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-      
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-      
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-      
-                <button type="submit">Enviar</button>
-              </form>
-		</section>--> <!-- Eliminado porque se desarrolla en las otras paginas html-->
+	</main>
         <section id="agradecimiento">
             <h2>Agradecimiento</h2>
             <p>Gracias por leer mi portafolio. Espero que te haya gustado y si tienes alguna pregunta o quieres trabajar conmigo en algún proyecto, no dudes en ponerte en contacto conmigo.</p>
@@ -90,5 +74,7 @@
 	<footer>
 		<p>© 2023 Franco Roman Rossi. Todos los derechos reservados.</p>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 </body>
 </html>
