@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+header nav {
+  background-color: #343a40;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+header nav ul li {
+  margin: 0 10px;
+  display: inline-block;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+main img {
+  max-width: 100%;
+  height: auto;
+}
+main section {
+  margin-bottom: 50px;
+}
+main section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main section #proyectos ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main section #proyectos ul li {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+main section #proyectos ul li a {
+  display: block;
+  position: relative;
+}
+main section #proyectos ul li a .image1 {
+  background-image: url("imgproyecto1.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+main section #proyectos ul li a .image2 {
+  background-image: url("imgproyecto2.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+main section #proyectos ul li a .image3 {
+  background-image: url("imgproyecto3.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+main section #proyectos ul li a span {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+main section #descargar-cv button[type=submit-cv] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main section #descargar-cv button[type=submit-cv]:hover {
+  background-color: #666;
+}
+main section #contacto li {
+  margin-bottom: 10px;
+}
+main section #contacto form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section #contacto form label {
+  display: block;
+  margin-bottom: 10px;
+}
+main section #contacto form input[type=text],
+main section #contacto form input[type=email],
+main section #contacto form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+main section #contacto form button[type=submit] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main section #contacto form button[type=submit]:hover {
+  background-color: #666;
+}
+main section #agradecimiento {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+main section #agradecimiento h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main section #agradecimiento p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .car-img-top {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  nav {
+    padding: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .menu-icon {
+    display: block;
+  }
+  nav .menu-icon:hover {
+    cursor: pointer;
+  }
+  nav .menu-icon:before {
+    content: "\f0c9";
+    font-family: FontAwesome;
+    font-size: 24px;
+  }
+  nav.active ul {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=styles2.css.map */

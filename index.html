@@ -5,21 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mi portafolio</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		/* reset de estilos */
+		body {
+		  margin: 0;
+		  padding: 0;
+		  font-family: sans-serif;
+		  color: #333;
+		}
+		a:hover {
+		  color: inherit;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+	  </style>
+	  <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
 	<header>
         <h1>Franco Rossi</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="proyectos.html">Proyectos</a></li>
-				<li><a href="sobremi.html">Sobre mi</a></li>
-				<li><a href="habilidades.html">Habilidades</a></li>
-				<li><a href="descargarcv.html">Descargar CV</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="navbar-brand" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="proyectos.html">Proyectos</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="sobremi.html">Sobre mi</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="habilidades.html">Habilidades</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="descargarcv.html">Descargar CV</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main>
@@ -42,7 +73,7 @@
 				<h2>Proyectos</h2>
 				<div class="card-deck">
 					<div class="card">
-						<img src="img/proyecto1.jpg" class="card-img-top" alt="Juego en Python">
+						<img src="img/proyecto1.jpg" id="image1" class="card-img-top" alt="Juego en Python">
 						<div class="card-body">
 							<h5 class="card-title">Juego en Python</h5>
 							<p class="card-text">Desarrollo de un juego en Python utilizando la librería Pygame.</p>
@@ -50,7 +81,7 @@
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/proyecto2.jpg" class="card-img-top" alt="Página web">
+						<img src="img/proyecto2.jpg" id="image2" class="card-img-top" alt="Página web">
 						<div class="card-body">
 							<h5 class="card-title">Página web</h5>
 							<p class="card-text">Desarrollo de una página web utilizando HTML, CSS y Bootstrap.</p>
@@ -58,14 +89,14 @@
 						</div>
 					</div>
 					<div class="card">
-						<img src="img/proyecto3.jpg" class="card-img-top" alt="Programación en C++">
+						<img src="img/proyecto3.jpg" id="image3" class="card-img-top" alt="Programación en C++">
 						<div class="card-body">
 							<h5 class="card-title">Programación en C++</h5>
 							<p class="card-text">Desarrollo de un programa en C++ para calcular la distancia entre dos puntos en un plano cartesiano.</p>
 							<a href="#" class="btn btn-primary">Ver proyecto</a>
 						</div>
+					</div>
 		</section>
-	</main>
         <section id="agradecimiento">
             <h2>Agradecimiento</h2>
             <p>Gracias por leer mi portafolio. Espero que te haya gustado y si tienes alguna pregunta o quieres trabajar conmigo en algún proyecto, no dudes en ponerte en contacto conmigo.</p>
